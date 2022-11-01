@@ -4,13 +4,14 @@ interface Props {
 	primary: boolean;
 }
 export const Button = styled.button<Props>`
-  color: palevioletred;
-	background: ${props => props.primary ? 'none' : 'white'};
+	height: 3em;
+  color: white;
+	background: ${props => props.primary ? 'none' : 'teal'};
   font-size: 1em;
   margin: 1em;
 	margin-bottom: 0;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
+  border: 2px solid white;
   border-radius: 3px;
   display: inline-block;
 

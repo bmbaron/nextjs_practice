@@ -7,22 +7,21 @@ import { Container } from '../components/elements/Container'
 
 export const Component1 = () => {
 
-	const { setToggleComponent } = useContext(ToggleContext)
 	const { secretWord } = useContext(UserContext)
+	const { setToggleComponent } = useContext(ToggleContext)
 
 	const [showSecret, setShowSecret] = useState<boolean>(false)
 
 	return (
 		<>
 			<Container bg='salmon'>
-				<h1>hello</h1>
-				<p>This is the first component. It&apos;s red.</p>
+				<h1>View Secret</h1>
 				<div>
 					<Button
 						primary={false}
 						onClick={() => setShowSecret(prev => !prev)}
-					>click to show secret</Button>
-					{showSecret && <p>{secretWord}</p>}
+					>click to {showSecret ? 'hide' : 'show'} secret</Button>
+					<p>{showSecret ? secretWord: '***'}</p>
 				</div>
 			</Container>
 			<Button
@@ -30,7 +29,7 @@ export const Component1 = () => {
 				onClick={() => {
 					setToggleComponent(false)
 				}}
-			>change component
+			>go to <strong>edit secret</strong>
 			</Button>
 		</>
 	)
