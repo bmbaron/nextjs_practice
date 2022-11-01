@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
-import { TestContext } from '../contexts/TestContext';
+import { ToggleContext } from '../contexts/ToggleContext';
 import { Button } from './elements/Button';
 import { Container } from './elements/Container';
 
 export const Component2 = () => {
-	const { setToggleComponent } = useContext(TestContext)
+	const { setToggleComponent } = useContext(ToggleContext)
 
 		return (
 			<>
-			<Container bg='blue'>
+			<Container bg='royalblue'>
 				<h1>goodbye</h1>
 				<p>This is the second component. It&apos;s blue.</p>
 			</Container>
 			<Button
-				primary={false}
+				primary={true}
 				onClick={() => {
 					setToggleComponent(true)
 				}}

@@ -5,7 +5,7 @@ export type GlobalContent = {
 	setToggleComponent:(t: boolean) => void
 }
 
-export const TestContext = createContext<GlobalContent>({
+export const ToggleContext = createContext<GlobalContent>({
 	toggleComponent: true,
 	setToggleComponent: () => {},
 })
