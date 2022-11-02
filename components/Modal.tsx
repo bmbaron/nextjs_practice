@@ -13,7 +13,7 @@ export const Modal = (props: Props) => {
 
 	return (
 		<Container bg='goldenrod'>
-			<h1>hello, what&apos;s your secret?&nbsp; </h1>
+			<h1>Context Demo</h1>
 			<input 
 				placeholder={secretWord}
 				onChange={e => setSecretWord(e.target.value)}

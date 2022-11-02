@@ -13,15 +13,11 @@ export const Container = styled.div<Props>`
 	margin: auto;
 	padding: 10px;
 	padding-bottom: 2rem;
+	color: black;
 
 	> h1 {
 		font-size: 4em;
-		color: black;
-		margin-bottom: 1rem;
-	}
-
-	> * p {
-		font-size: 1.5em;
+		margin-bottom: 5rem;
 	}
 
 	> input, * input {
@@ -29,13 +25,13 @@ export const Container = styled.div<Props>`
 		line-height: 3em;
 		font-size: 1em;
 		background: white;
-		color: black;
 		width: 200px;
-		text-indent: 10px;
+		text-indent: 5px;
+		color: black;
 	}
 
 	> * p {
-		color: black;
 		font-style: italic;
+		font-size: 1.5em;
 	}
 `

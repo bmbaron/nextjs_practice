@@ -11,6 +11,7 @@ export const Component1 = () => {
 	const { setToggleComponent } = useContext(ToggleContext)
 
 	const [showSecret, setShowSecret] = useState<boolean>(false)
+	const newArray: string[] = Array.from('*'.repeat(secretWord.length))
 
 	return (
 		<>
@@ -21,7 +22,7 @@ export const Component1 = () => {
 						primary={false}
 						onClick={() => setShowSecret(prev => !prev)}
 					>click to {showSecret ? 'hide' : 'show'} secret</Button>
-					<p>{showSecret ? secretWord: '***'}</p>
+					<p>{showSecret ? secretWord: newArray}</p>
 				</div>
 			</Container>
 			<Button

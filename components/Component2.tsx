@@ -11,7 +11,7 @@ export const Component2 = () => {
 
 		return (
 			<>
-			<Container bg='royalblue'>
+			<Container bg='lightblue'>
 				<h1>Edit Secret</h1>
 				<p>changes are automatically saved</p>
 				<div>
